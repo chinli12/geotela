@@ -1,0 +1,51 @@
+# Environment variables - DO NOT COMMIT
+.env
+.env.local
+.env.*.local
+
+# Flutter
+build/
+ios/.symlinks/
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+
+# Generated files
+lib/generated_plugin_registrant.dart
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Dependencies
+pubspec.lock
+.packages
+
+# Analysis
+.dart_tool/
+analysis_options.yaml.bak
+
+# Build outputs
+*.apk
+*.app
+*.ipa
+*.aar
+
+# Secrets and credentials
+*.key
+*.pem
+*.p8
+google-services.json
+GoogleService-Info.plist
+firebase_config.dart

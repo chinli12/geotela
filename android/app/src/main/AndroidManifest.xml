@@ -61,7 +61,9 @@
         <meta-data
             android:name="flutterEmbedding"
             android:value="2" />
-        <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyDqPR5yDMelBQS5hxJTOy5mxMAAzaR9aBo"/>
+        <!-- Note: Google Maps API key should be provided at build time via build.gradle -->
+        <!-- Define android:value="" here and set via BuildConfig or environment variable -->
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value=""/>
 
 
 

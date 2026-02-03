@@ -6,6 +6,7 @@ import '/backend/api_requests/api_manager.dart';
 import 'backend/supabase/supabase.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'flutter_flow/flutter_flow_util.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'dart:convert';
 
 class FFAppState extends ChangeNotifier {
@@ -446,7 +447,8 @@ class FFAppState extends ChangeNotifier {
     searchstories.insert(index, value);
   }
 
-  String _googlemap = 'AIzaSyCNyF_4rWlMxSss-KmGyLsDqZ96aSSOX20';
+  String _googlemap =
+      dotenv.env['GOOGLE_MAPS_API_KEY'] ?? 'AIzaSyCNyF_4rWlMxSss-KmGyLsDqZ96aSSOX20';
   String get googlemap => _googlemap;
   set googlemap(String value) {
     _googlemap = value;

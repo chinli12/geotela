@@ -3,6 +3,7 @@ import 'dart:typed_data';
 import '../schema/structs/index.dart';
 
 import 'package:flutter/foundation.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 import '/flutter_flow/flutter_flow_util.dart';
 import 'api_manager.dart';
@@ -17,10 +18,9 @@ class GetsupabaseGroup {
   static String getBaseUrl() =>
       'https://deycthvditigtcwtvals.supabase.co/rest/v1';
   static Map<String, String> headers = {
-    'apikey':
+    'apikey': dotenv.env['SUPABASE_ANON_KEY'] ??
         'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRleWN0aHZkaXRpZ3Rjd3R2YWxzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzYwMjQyMjgsImV4cCI6MjA1MTYwMDIyOH0.uokijIkfv2jGMH4xWNzYiqiaBOr5UeFUQM7FA2tZZfQ',
-    'Authorization':
-        'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRleWN0aHZkaXRpZ3Rjd3R2YWxzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzYwMjQyMjgsImV4cCI6MjA1MTYwMDIyOH0.uokijIkfv2jGMH4xWNzYiqiaBOr5UeFUQM7FA2tZZfQ',
+    'Authorization': 'Bearer ${dotenv.env['SUPABASE_ANON_KEY'] ?? 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRleWN0aHZkaXRpZ3Rjd3R2YWxzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzYwMjQyMjgsImV4cCI6MjA1MTYwMDIyOH0.uokijIkfv2jGMH4xWNzYiqiaBOr5UeFUQM7FA2tZZfQ'}',
   };
   static ProfilesCall profilesCall = ProfilesCall();
   static GroupsCall groupsCall = GroupsCall();

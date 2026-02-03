@@ -7,6 +7,7 @@ import 'dart:ui';
 import '/custom_code/actions/index.dart' as actions;
 import '/flutter_flow/custom_functions.dart' as functions;
 import '/index.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart'
     as smooth_page_indicator;
 import 'package:flutter/gestures.dart';
@@ -51,7 +52,8 @@ class _QuizQuestionInterfaceWidgetState
     // On page load action.
     SchedulerBinding.instance.addPostFrameCallback((_) async {
       _model.apiResult7zg = await GeminiGetQuestionsCall.call(
-        geminiApiKey: 'AIzaSyBvU8wYlpe9NoyxMlbevHN_bNbR_eNebUY',
+        geminiApiKey: dotenv.env['GOOGLE_GEMINI_API_KEY'] ??
+            'AIzaSyBvU8wYlpe9NoyxMlbevHN_bNbR_eNebUY',
         storyText: getJsonField(
           widget!.history,
           r'''$.fullNarrative''',
