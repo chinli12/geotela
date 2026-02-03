@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1024039756181",
+    "project_id": "newhome-d3971",
+    "storage_bucket": "newhome-d3971.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1024039756181:android:ea38eb79cc8ddc2d4a969c",
+        "android_client_info": {
+          "package_name": "com.mycompany.geotela"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuZxlGZMW2Fidi72GcE4y2VMNLJYmbVDI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

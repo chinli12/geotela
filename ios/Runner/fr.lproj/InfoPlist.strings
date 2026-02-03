@@ -1,0 +1,4 @@
+NSLocationWhenInUseUsageDescription = "Cette application a besoin d'accéder à votre position pour découvrir les actualités à proximité, vous fournir des itinéraires et vous proposer du contenu pertinent.";
+NSCameraUsageDescription = "Cette application a besoin d'accéder à votre caméra pour vous permettre de prendre des photos et des vidéos pour vos publications et photos de profil.";
+NSPhotoLibraryUsageDescription = "Cette application a besoin d'accéder à votre photothèque pour vous permettre de sélectionner des images et des vidéos pour vos publications et votre photo de profil.";
+NSMicrophoneUsageDescription = "Cette application a besoin d'accéder à votre microphone pour enregistrer l'audio des publications vidéo et des notes vocales.";
